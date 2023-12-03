@@ -36,3 +36,16 @@ adb shell content delete --uri content://com.qupris/apps
 ```
 $ANDROID_HOME/emulator/emulator -avd Pixel_API_33 -verbose
 ```
+
+# Tools
+
+```
+
+#Run mobsf:
+docker pull opensecurity/mobile-security-framework-mobsf:latest
+docker run -it --rm -p 8000:8000 -d opensecurity/mobile-security-framework-mobsf:latest
+
+#Run APKID:
+apkid ~/thesis_infrastructure/apks/com.zzkko/839/com.zzkko.apk
+
+```
